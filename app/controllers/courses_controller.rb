@@ -1,5 +1,5 @@
 class CoursesController < ApplicationController
   def amdev
-    render({ :text => "<h1>Good Morning! Your lucky number for the day is #{rand(100)}.</h1>"})
+    @lucky_number = rand(100)
   end
 end
