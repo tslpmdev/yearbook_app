@@ -1,4 +1,8 @@
 class CoursesController < ApplicationController
+  def section
+    @students # Finish this using the info from the dynamic route segment
+  end
+
   def beghtmltue
     @students = Student.fetch(39)
   end

@@ -6,4 +6,8 @@ YearbookApp::Application.routes.draw do
   get('/advancedhtml', { :controller => 'Courses', :action => 'advhtml' })
   get('/visualdesign', { :controller => 'Courses', :action => 'visual' })
   get('/userexperience', { :controller => 'Courses', :action => 'ux' })
+
+  get('/courses/:course_id', { :controller => 'Courses', :action => 'section' })
+
+
 end
