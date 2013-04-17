@@ -17,6 +17,7 @@ class Student
       s.twitter = student_hash["twitter"]
       s.photo_url = student_hash["avatar"]
       s.name = student_hash["first_name"] + " " + student_hash["last_name"]
+      s.section = result["name"]
 
       array_of_students << s
     end

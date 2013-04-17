@@ -1,17 +1,7 @@
 class CoursesController < ApplicationController
   def section
-    @students # Finish this using the info from the dynamic route segment
-  end
-
-  def beghtmltue
-    @students = Student.fetch(39)
-  end
-
-  def pmdev
-    @students = Student.fetch(37)
-  end
-
-  def amdev
-    @students = Student.fetch(36)
+    course_number = params[:course_id]
+    @students = Student.fetch(course_number)
+    @course_title = @students.first.section
   end
 end
